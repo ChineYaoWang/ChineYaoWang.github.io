@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/3/main3.css" />
+		<noscript><link rel="stylesheet" href="assets/css/3/noscript3.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<h1>Husky Car</h1>
+						<!-- <p>Ipsum dolor sit amet nullam</p> -->
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+								<h2><b>About</b></h2>
+								<p>Time: Mar 2021~ Jun 2022</p>
+								<p>Role: Developing algorithms for camera and intergrate devices under Robotic Operating System (ROS)</p>
+								<p>Skills Gained: Camera Calibration, Transfrom Matrix & Frame coordinatation, ROS, Motion planning</p>
+								<h2><b>Target</b></h2>
+								<p>Developed algorithm for the husky car reaching desingated place without hitting the obstacles using lidar. And also allowed the robotic arm to detect and grab the tennis autonomously by using camera. After the tennis is grabbed, the husky car will go to arrive </p>
+								<div class = car>
+									<img src="images\Husky\front.jpg">	
+								</div>
+							</section>
+
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+								<h2><b>Camera & Robotic arm</b></h2>
+								<p>By calibrating the camera using chessboard as well as the distance between the camera and robotic arm, we can then define a rotation matrix that helps us transform object's coordinatation into robotic arm's coordinatation. Since the camera only provid 2d coordination, we get the depth through the size of tennis we detect. The smaller we got, the larger distance from the camera.  Afterwards, we applied inverse kinematic into our algorithm for arm so that it can reached to the correct coordination. The error is within 3cm so that it can grab it successfully.</p>
+								
+							</section>
+							<section id="content" class="main">
+								<h2><b>Husky Car & ROS</b></h2>
+								<p>For the Husky Car, we used a lidar as our sensor to detect the surroundings, and we applied Kalman-filer to balance between our model and the sensor data. We used ROS to integrate and communicate with others</p>
+							</section>
+							<section id="content" class="main">
+								<h2><b>Video</b></h2>
+								<video controls >
+									<source src="images\Husky\car.mp4" type="video/mp4">
+								</video>
+							</section>
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min3.js"></script>
+			<script src="assets/js/jquery.scrollex.min3.js"></script>
+			<script src="assets/js/jquery.scrolly.min3.js"></script>
+			<script src="assets/js/browser.min3.js"></script>
+			<script src="assets/js/breakpoints.min3.js"></script>
+			<script src="assets/js/util3.js"></script>
+			<script src="assets/js/main3.js"></script>
+
+	</body>
+</html>

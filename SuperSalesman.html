@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/1/main1.css" />
+		<noscript><link rel="stylesheet" href="assets/css/1/noscript1.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<h1>Super Salesman</h1>
+						<!-- <p>Ipsum dolor sit amet nullam</p> -->
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+								<h2><b>About</b></h2>
+								<p>Time: Sep 2021~ Oct 2021</p>
+								<p>Role: Developing algorithms for the shortest path</p>
+								<p>Skills Gained: Concept of genetic algorithm, Method of Preventing from stranding in local Minimum, Pros and Cons of hill climbing and crossover</p>
+								<h2><b>Target</b></h2>
+								<p>Among 1000 points, we aim to find the shortest path using different type of designed algorithms. Find out the best algorithms and compared with others</p>
+								<img src="images\Sales\toon-super-salesman.webp">
+							</section>
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+								<h2><b>Method</b></h2>
+								<p><b><I>Random Search:</I></b></p>
+								<p>For the method of random search, the distance for each evaluation is calculated by a completely random assortment of the given list of coordinates. For the shortest path, if the distance for an evaluation is higher than the previous evaluation, it is removed and the previous distance is used. If the obtained distance is lower, it becomes the new minimum distance.</p>
+								<p><b><I>Random Mutation Hill Climb:</I></b></p>
+								<p>For the method of hill climb, the goal is to reach the minimum distance by switching the order of one city with the next. In order to implement this algorithm, a random number within the number of indices is chosen. The chosen index and the neighboring city are switched, generating a new distance. In the end, this algorithm results in a local minimum.</p>
+								<p><b><I>Genetic Algorithm-Tournament:</I></b></p>
+								<p>A genetic algorithm is created such that crossovers happen among 1000 sets of shuffled lists of coordinates, and it has a mutation rate of 30%. The crossover was a two-point crossover, in which the placements of the crossover are generated as two unique random locations of the indices to create offspring. The mutation follows the RMHC algorithm. The selection method is through a tournament: after calculating the distances of all parents and offspring, they are ranked according to the lowest distance. 50% of those in the tournament pass the selection process.</p>
+								<p><b><I>Genetic Algorithm-Tournament (Added variation):</I></b></p>
+								<p>In this variation of the previous GA, an additional probability of 5% is included that allows some of the sets of coordinates that lost the tournament to survive to be able to create offspring in the next run. This introduces good genes that might have been neglected due to other bad genes and increases diversity in the algorithm. While it may slow down the process to get to a certain fitness as the original GA, it will result in a lower value after further evaluations. The other parameters such as the mutation rate and selection method are kept the same.</p>
+							</section>
+							<section id="content" class="main">
+								<h2><b>Data</b></h2>
+								<img src="images\Sales\data.png" width="100%" height="100%">
+							</section>
+							<section id="content" class="main">
+								<h2><b>Hill Climbing & Randomresearch</b></h2>
+								<img src="images\Sales\hill_and_rs.png" >
+								<br>
+								<br>
+								<h2><b>Learning Curve & Shortest Path</b></h2>
+								<img src="images\Sales\LC_and_SP.png" width="100%" height="100%">
+							</section>
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min1.js"></script>
+			<script src="assets/js/jquery.scrollex.min1.js"></script>
+			<script src="assets/js/jquery.scrolly.min1.js"></script>
+			<script src="assets/js/browser.min1.js"></script>
+			<script src="assets/js/breakpoints.min1.js"></script>
+			<script src="assets/js/util1.js"></script>
+			<script src="assets/js/main1.js"></script>
+
+	</body>
+</html>
